@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+
+        var temperature = parseFloat(prompt("Enter the temperature:"));
+
+
+        var conversionType = prompt("Enter the conversion type (C to F or F to C):");
+
+
+        if (temperature == temperature) {
+            switch (conversionType.toUpperCase()) {
+                case "C TO F":
+                    var fahrenheit = (temperature * 1.8) + 32;
+                    document.write(temperature + "°C is " + fahrenheit.toFixed(2) + "°F");
+                    break;
+                case "F TO C":
+                    var celsius = (temperature - 32) / 1.8;
+                    document.write(temperature + "°F is " + celsius.toFixed(2) + "°C");
+                    break;
+                default:
+                    document.write("Invalid conversion type. Please enter 'C to F' or 'F to C'.");
+            }
+        } else {
+            document.write("Invalid input. Please enter a valid number for temperature.");
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
